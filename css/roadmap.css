@@ -1,0 +1,139 @@
+.section__normal{
+	padding:73px 15px;
+	background-color: #2c0120f5;
+	text-align:center;
+	color: #f9fafb;
+	font-size:22px;
+	line-height:1.5;
+	position:relative;
+	z-index:15;
+	}
+
+.section__normal .container{
+	overflow:hidden
+}
+.section__normal a{
+	color:#838383
+}
+.section__normal .pcs{
+	margin-bottom:25px
+}
+@media screen and (max-width:1368px){
+.section__normal{
+	font-size: 21px;
+}}
+@media screen and (max-width:768px){
+.section__normal{
+	padding:50px 0 73px
+}}
+.section__normal h2{
+	position:relative;
+	padding-top:94px;
+	font-size: 55px;
+	text-transform:uppercase;
+	color: #fb4e5e;
+}
+@media screen and (max-width:768px){
+.section__normal h2{
+	padding-top:64px;
+	font-size:30px
+}}
+.section__normal h2 span{
+	color:#007bfe
+}
+.section__normal p{
+	max-width:900px;
+	margin:0 auto
+}
+.section__normal .benefits{
+	list-style:none;
+	padding:50px 0 0;
+	margin:0 0 100px;
+	display:flex;
+	justify-content:center
+}
+@media screen and (max-width:1368px){
+.section__normal .benefits{
+	flex-wrap:wrap
+}}
+@media screen and (max-width:768px){
+.section__normal .benefits{
+	margin:0
+}}
+.section__normal .benefits li{
+	width:30%;
+	padding:20px;
+	text-align:left
+}
+@media screen and (max-width:1368px){
+.section__normal .benefits li{
+	width:50%
+}}
+@media screen and (max-width:768px){
+.section__normal .benefits li{
+	width:100%
+}}
+.section__normal .benefits li h3{
+	font-size: 24px;
+	text-transform:uppercase;
+	color: #ffdd78;
+}
+.section__normal .benefits li p{
+	font-size:20px;
+	margin-bottom:15px
+}
+.section__normal .benefits li.benefit-single{
+	padding-top:72px;
+	position:relative
+}
+.section__normal .modified{
+	list-style:none;
+	padding:50px 0 0;
+	margin:0 0 100px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap
+}
+@media screen and (max-width:768px){
+.section__normal .modified{
+	margin:0
+}}
+.section__normal .modified li{
+	width:50%;
+	padding:20px;
+	text-align:left;
+	overflow:hidden
+}
+@media screen and (max-width:768px){
+.section__normal .modified li{
+	width:100%
+}}
+.section__normal .modified li h3{
+	font-size:22px;
+	text-transform:uppercase;
+	color:#222
+}
+.section__normal .roadmap li{
+	width:30%;
+	padding:20px;
+	text-align:left
+}
+@media screen and (max-width:1368px){
+.section__normal .roadmap li{
+	width:50%
+}}
+@media screen and (max-width:768px){
+.section__normal .roadmap li{
+	width:100%
+}}
+.section__normal .roadmap li h3{
+	font-size: 24px;
+	text-transform:uppercase;
+	color: #ffdd78;
+}
+.section__normal .roadmap li p{
+	margin-bottom:15px
+}
+.section__normal .roadmap li p .strike{
+	text-decoration:line-through
+}
