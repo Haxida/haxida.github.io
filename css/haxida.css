@@ -7,8 +7,8 @@
 }
 body {
     font-family: 'Cuprum', Georgia, "Times New Roman", Times, Serif;
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
     background:#2c0120;
     background: radial-gradient(circle,#080a17 0%, #2c0120 100%);
     background-size: cover;
@@ -80,58 +80,58 @@ header {
 }
 
 .mainmenu {
-	color: #eeeeee;
-	font-size: 17px;
-	font-family: 'Cuprum', Georgia, "Times New Roman", Times, Serif;
-	background: #2c0120f5; 
-	background: radial-gradient(circle,#080a17 0%, #2c0120 100%);
-	width: 100%; 
-	height: 51px; 
-	border-bottom: 1x solid #340a28;
-	text-shadow: 0 1px 0 #340a28;
-	}
+    color: #eeeeee;
+    font-size: 17px;
+    font-family: 'Cuprum', Georgia, "Times New Roman", Times, Serif;
+    background: #2c0120f5; 
+    background: radial-gradient(circle,#080a17 0%, #2c0120 100%);
+    width: 100%; 
+    height: 51px; 
+    border-bottom: 1x solid #340a28;
+    text-shadow: 0 1px 0 #340a28;
+    }
 
 .mainmenu ul {
-	margin: 0; 
-	padding: 0; 
-	}
+    margin: 0; 
+    padding: 0; 
+    }
 
 .mainmenu li i {
-	position: absolute; 
-	margin-left: -35px; 
-	margin-top: 6px; 
-	color: #e1e1e1;  
-	text-shadow: 0 1px 0 #e1e1e1;
-	}
+    position: absolute; 
+    margin-left: -35px; 
+    margin-top: 6px; 
+    color: #e1e1e1;  
+    text-shadow: 0 1px 0 #e1e1e1;
+    }
 
 .mainmenu li { 
-	float: left; 
-	display: block; 
-	cursor: pointer; 
-	min-width: 100px; 
-	max-width: 100px; 
-	}
+    float: left; 
+    display: block; 
+    cursor: pointer; 
+    min-width: 100px; 
+    max-width: 100px; 
+    }
 
 .mainmenu li:hover { 
-	background: #261220e2e; 
-	}
+    background: #261220e2e; 
+    }
 
 .mainmenu li:hover i {
-	color: #340a28e2e; 
-	text-shadow: 0 1px 0 #340a28;
-	}
+    color: #340a28e2e; 
+    text-shadow: 0 1px 0 #340a28;
+    }
 
 .mainmenu li main {
-	font-weight: 700; 
-	margin-top: -18px; 
-	}
+    font-weight: 700; 
+    margin-top: -18px; 
+    }
 
 .mainmenu li desc { 
-	position: relative; 
-	float: left; 
-	font-size: 11px; 
-	color: #e3e39d; 
-	}
+    position: relative; 
+    float: left; 
+    font-size: 11px; 
+    color: #e3e39d; 
+    }
 
 .mainmenu li, .mainmenu li i, .mainmenu li main, .mainmenu li desc {
     -moz-transition: all 0.8s ease-in-out;
@@ -438,8 +438,8 @@ a {
 }
 
 .footer-content {
-  color: #2ac9d7;
-  font-size: 13px;
+  color: #ffffff;
+  font-size: 14px;
   font-weight: 300;
 }
 
