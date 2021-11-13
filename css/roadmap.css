@@ -1,8 +1,8 @@
 .section__normal{
-	padding:73px 15px;
+	padding: 73px 15px;
 	text-align:center;
 	color: #f9fafb;
-	font-size:22px;
+	font-size: 24px;
 	line-height:1.5;
 	position:relative;
 	z-index:15;
@@ -17,9 +17,9 @@
 .section__normal .pcs{
 	margin-bottom:25px
 }
-@media screen and (max-width:1368px){
+@media screen and (max-width: 900px){
 .section__normal{
-	font-size: 21px;
+	font-size: 20px;
 }}
 @media screen and (max-width:768px){
 .section__normal{
@@ -27,29 +27,29 @@
 }}
 .section__normal h2{
 	position:relative;
-	padding-top:94px;
-	font-size: 55px;
+	padding-top: 15px;
+	font-size: 57px;
 	text-transform:uppercase;
 	color: #fb4e5e;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
 .section__normal h2{
-	padding-top:64px;
-	font-size:30px
+	padding-top: 20px;
+	font-size: 37px;
 }}
 .section__normal h2 span{
 	color:#007bfe
 }
 .section__normal p{
-	max-width:900px;
-	margin:0 auto
+	max-width: 900px;
+	margin:0 auto;
 }
 .section__normal .benefits{
 	list-style:none;
-	padding:50px 0 0;
+	padding: 45px 0 0;
 	margin:0 0 100px;
-	display:flex;
-	justify-content:center
+	display: inline-flex;
+	justify-content:center;
 }
 @media screen and (max-width:1368px){
 .section__normal .benefits{
@@ -60,9 +60,9 @@
 	margin:0
 }}
 .section__normal .benefits li{
-	width:30%;
+	width: 30%;
 	padding:20px;
-	text-align:left
+	text-align:left;
 }
 @media screen and (max-width:1368px){
 .section__normal .benefits li{
@@ -78,8 +78,8 @@
 	color: #ffdd78;
 }
 .section__normal .benefits li p{
-	font-size:20px;
-	margin-bottom:15px
+	font-size: 15px;
+	margin-bottom:15px;
 }
 .section__normal .benefits li.benefit-single{
 	padding-top:72px;
@@ -113,9 +113,9 @@
 	color:#222
 }
 .section__normal .roadmap li{
-	width:30%;
+	width: 30%;
 	padding:20px;
-	text-align:left
+	text-align:left;
 }
 @media screen and (max-width:1368px){
 .section__normal .roadmap li{
@@ -126,7 +126,7 @@
 	width:100%
 }}
 .section__normal .roadmap li h3{
-	font-size: 24px;
+	font-size: 25px;
 	text-transform:uppercase;
 	color: #ffdd78;
 }

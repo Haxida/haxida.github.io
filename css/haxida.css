@@ -27,8 +27,8 @@ body {
 }
 
 header {
-    background: #7c7c7c;
-    /*padding: 10px 0;*/
+    background: #1d051c;
+    /* padding: 10px 0; */
     width: 100%;
     top: 0;
     transition: all 0.3s ease-in-out;
@@ -37,7 +37,7 @@ header {
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     z-index: 100;
-    position: fixed;
+    position: sticky;
 }
 .header-top {
     background: rgb(0 7 44);
@@ -73,6 +73,10 @@ header {
 .container {
     z-index: 1;
     position: relative;
+}
+
+.active {
+  background-color: #261220; /* Add an active/current color */
 }
 
 .mainmenu {

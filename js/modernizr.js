@@ -5,4 +5,4 @@
 /**
  * Custom tests
  */
-Modernizr.addTest('ios', /(ipod|iphone|ipad)/i.test(navi
+Modernizr.addTest('ios', /(ipod|iphone|ipad)/i.test(navigator.platform));
