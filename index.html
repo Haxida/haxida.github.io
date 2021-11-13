@@ -113,6 +113,46 @@
           </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="heading text-center">
+       <div>
+           <h6 class="sub-title">Token Tracker</h6>
+           <h2 class="title">CONTRACT ADDRESS</h2>
+       </div>
+
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-md-12 col-lg-9">
+           <div class="heading mb-12">
+              <center>
+                 <input type="text" id="myInput" style="font-size: 12px; font-size: 2.5vw; border:1px dashed white;  background-color:transparent; text-align:center; padding:5px 5px 5px 5px; width:100%;  color: #9933FF; text-transform:none; animation-delay: 0.2s; opacity: 1;" value='0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b' />
+              </center>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <div class="heading mb-12">
+             <center>
+               <button class="btn btn-outline-primary btn-rounded" dir="rtl" onclick="myFunction()">Copy Contract Address</button>
+                 <script>
+                   function myFunction() 
+                   {
+                       var copyText = document.getElementById("myInput");
+
+                       copyText.select();
+                       copyText.setSelectionRange(0, 99999);
+                       document.execCommand("copy");
+                       alert("copied");
+                   }
+                 </script>
+               </center>
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>
+
   <div class="more-section">
     <div class="read-more w-container">
       <div class="more-row w-row">

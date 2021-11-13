@@ -151,7 +151,55 @@ header {
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-//.btn-grad {background-image: linear-gradient(to right, #dc3545 0%, #1b3ec1cc 51%, rgb(25 6 27) 100%);}
+.heading {
+  position : relative;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    margin-bottom : 6rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .heading {
+    margin-bottom : 3rem;
+  }
+}
+
+.heading .title {
+  color : #FFFFFF;
+  padding-top : 2.25rem;
+  text-transform : uppercase;
+}
+
+.heading .sub-title {
+  width: 100%;
+  color : #DCD6F5;
+  position : absolute;
+  opacity: 0.1;
+  font-size: 5.625rem;
+  font-weight: 700;
+  letter-spacing : 0;
+  text-align : center;
+  margin : 0 auto;
+  display : block;
+  left : 50%;
+  -webkit-transform : translate(-50%);
+  -moz-transform : translate(-50%);
+  -ms-transform : translate(-50%);
+  -o-transform : translate(-50%);
+  transform : translate(-50%);
+  top : -2px;
+  text-transform : uppercase;
+}
+
+.heading .content-desc {
+  color : #a6c5ff;
+  margin-top : 2.5rem;
+}
+
+/*.btn-grad {background-image: linear-gradient(to right, #dc3545 0%, #1b3ec1cc 51%, rgb(25 6 27) 100%);}*/
 .btn-grad {
   padding: 8px 18px;
   text-align: center;
