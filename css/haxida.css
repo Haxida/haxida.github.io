@@ -75,6 +75,15 @@ header {
     position: relative;
 }
 
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.output {
+    background: #eee;
+}
+
 .active {
   background-color: #261220; /* Add an active/current color */
 }
@@ -153,6 +162,11 @@ header {
 
 .heading {
   position : relative;
+}
+
+.heading2 {
+
+    font-size: 46px;
 }
 
 @media (min-width: 768px) {

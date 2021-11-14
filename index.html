@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <!-- CSS -->
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/haxida.css" rel="stylesheet" type="text/css">
@@ -61,6 +62,9 @@
               </main></li>
       <li><i class="nav-item text-center">
                 </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<main><a href="https://pancakeswap.finance/swap?outputCurrency=0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b" target="_blank" class="btn btn-grad p-1">Buy HAX</a>
+              </main></li>
+      <li><i class="nav-item text-center">
+                </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<main><a href="./buy.html" target="_blank" class="btn btn-grad p-1">How to Buy</a>
               </main></li>
     </ul>
   </div>
@@ -136,14 +140,19 @@
              <center>
                <button class="btn btn-outline-primary btn-rounded" dir="rtl" onclick="myFunction()">Copy Contract Address</button>
                  <script>
-                   function myFunction() 
-                   {
-                       var copyText = document.getElementById("myInput");
+                   function myFunction() {
+                     /* Get the text field */
+                     var copyText = document.getElementById("myInput");
 
-                       copyText.select();
-                       copyText.setSelectionRange(0, 99999);
-                       document.execCommand("copy");
-                       alert("copied");
+                     /* Select the text field */
+                     copyText.select();
+                     copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+                     /* Copy the text inside the text field */
+                     navigator.clipboard.writeText(copyText.value);
+  
+                     /* Alert the copied text */
+                     alert("Copied contract address: " + copyText.value);
                    }
                  </script>
                </center>
@@ -152,6 +161,38 @@
        </div>
     </div>
   </div>
+
+
+  <!-- Testing
+  <div class="exchange-listing" id="datavalue">
+      <div class="container-fluid bg-color">
+          <div class="container">
+              <div class="row listing list-unstyled">
+                  <div class="col d-none d-lg-block text-center">
+                      <img src="images/icon-arrow.png" alt="icon-arrow">
+                      <p class="grey-accent2 mt-1">Exchange listing to be announced</p>
+                  </div>
+                  <div class="col text-center">
+                      <h2 id="cprice" >$0.00000000000133860</h2>
+                      Current Price
+                  </div>
+                  <div class="col text-center">
+                      <h2 id="mcap" >$133</h2>
+                        Market Cap
+                  </div>
+                  <div class="col text-center">
+                      <h2 id="24chng" >234.91%</h2>
+                        24h Change
+                  </div>
+                  <div class="col text-center">
+                      <h2 id="holder" >10</h2>
+                        Holder
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  -->
 
   <div class="more-section">
     <div class="read-more w-container">
@@ -186,6 +227,7 @@
     </footer>
   </div>
   <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script> 
     function googleTranslateElementInit() { 
       new google.translate.TranslateElement({ 
