@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>Haxida - HAX.</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Cache-Control -->
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="-1" />
@@ -37,8 +37,6 @@
   <!-- CSS -->
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/haxida.css" rel="stylesheet" type="text/css">
-  <!-- JS -->
-  <script src="js/modernizr.js" type="text/javascript"></script>
 
   <!-- Icons -->
   <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
@@ -74,14 +72,17 @@
  </header>
   <div>
     <div class="w-container">
-      <a class="brand w-inline-block" href="./index.html" title="Haxida-Labs"><img class="logo" src="images/logo.png" title="Haxida-Labs" width="512">
-      </a>
+        <center><a class="brand w-inline-block" href="./index.html" title="Haxida-Labs"><img class="logo" src="images/logo.png" title="Haxida-Labs" width="490px">
+        </a></center>
     </div>
   </div>
   <div class="intro-section">
     <div class="w-container">
       <div class="grey intro">
-      Haxida Token <span class="ocean"><span>was born with a single idea in mind, </span></span>&nbsp;<span class="neon">to develop its own Ecosystem</span> based on<span class="teal">&nbsp;Blockchain technology</span>.</div>
+        <div id=container>
+           Haxida <span class="ocean"><span>was born with a single idea in mind, </span></span>&nbsp;<span class="neon">to develop its own Ecosystem</span> based on<span class="teal">&nbsp;Blockchain technology</span>.
+        </div>
+      </div>
     </div>
   </div>
   <div class="recognition-section">
@@ -140,7 +141,7 @@
         <div class="col-md-12 col-lg-9">
            <div class="heading mb-12">
               <center>
-                 <input type="text" id="myInput" style="font-size: 12px; font-size: 2.5vw; border:1px dashed white;  background-color:transparent; text-align:center; padding:5px 5px 5px 5px; width:100%;  color: #9933FF; text-transform:none; animation-delay: 0.2s; opacity: 1;" value='0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b' />
+                 <input type="text" id="myInput" title="CONTRACT ADDRESS" style="font-size: 12px; font-size: 2.5vw; border:1px dashed white;  background-color:transparent; text-align:center; padding:5px 5px 5px 5px; width:100%;  color: #9933FF; text-transform:none; animation-delay: 0.2s; opacity: 1;" value='0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b' />
               </center>
             </div>
         </div>
@@ -181,7 +182,12 @@
       <div class="container-fluid bg-color">
           <div class="container">
             <center>
-              <div class="nomics-ticker-widget" data-name="Haxida" data-base="HAX" data-quote="USD"></div>
+              <div class="nomics-ticker-widget-embedded nomics-ticker-widget-size-responsive nomics-ticker-widget-bg-light">
+                  <iframe frameborder="0" scrolling="no" height="270px" sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups" src="https://widget.nomics.com/assets/HAX/USD/" title="Haxida Price"></iframe>
+                  <div class="nomics-ticker-widget-footer" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                    <a href="https://nomics.com/assets/HAX-Haxida?quote=USD&amp;utm_source=nomics-widget&amp;utm_campaign=HAX-USD&amp;utm_medium=widget" target="_blank" rel="nofollow noopener" class="">Haxida Price</a> by <a href="https://nomics.com/?utm_source=nomics-widget&amp;utm_campaign=HAX-USD&amp;utm_medium=widget" target="_blank" rel="nofollow noopener">Nomics (A&nbsp;Crypto&nbsp;Market&nbsp;Cap&nbsp;Provider)</a>
+                  </div>
+              </div>
               <script src="https://widget.nomics.com/embed.js"></script>
             </center>
           </div>
@@ -240,6 +246,7 @@
           <div class="w-col w-col-6">
             <div class="footer-content right">
                &nbsp;<a target="_blank" href="https://twitter.com/Haxida_Token" rel="nofollow" title="Follow Haxida on twitter"><i class="fa fa-twitter"></i></a>
+               &nbsp;<a target="_blank" href="https://t.me/Haxida_Token" rel="nofollow" title="Follow Haxida on Telegram"><i class="fa fa-telegram"></i></a>
                &nbsp;<a target="_blank" href="https://medium.com/@Haxida" rel="nofollow" title="Follow Haxida on Medium"><i class="fa fa-medium"></i></a>
                &nbsp;<a target="_blank" href="https://github.com/Haxida" rel="nofollow" title="Follow Haxida on GitHub"><i class="fa fa-github"></i></a>
                &nbsp;
@@ -251,6 +258,7 @@
     </footer>
   </div>
   <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script> 
     function googleTranslateElementInit() { 

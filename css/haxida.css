@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 :root {
     /*--bs-primary-rgb: 10,30,115;*/
     /*--bs-success-rgb: 0,141,118;*/
     --bs-dark-rgb: 0,0,0;
 }
-body {
-    font-family: 'Cuprum', Georgia, "Times New Roman", Times, Serif;
+html, body {
+    font-family: 'Cuprum', Georgia, 'Times New Roman', Times, Serif;
     padding: 0px;
     margin: 0px;
     background:#2c0120;
-    background: radial-gradient(circle,#080a17 0%, #2c0120 100%);
+    background: radial-gradient(circle,#21041d 30%, #2c0120 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +24,7 @@ body {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 header {
@@ -70,14 +71,45 @@ header {
     font-weight: bold;
 }
 
-.container {
-    z-index: 1;
-    position: relative;
+.logo {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  max-width: 90%;
+  /*animation: blur 3s ease-out infinite;*/
 }
 
-iframe {
-    border: 1px solid black;
-    width: 100%;
+/*@keyframes blur{
+  from {
+      box-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #ff0099,
+      0px 0px 150px #ff0099,
+      0px 10px 100px #ff0099,
+      0px 10px 100px #ff0099,
+      0px 10px 100px #ff0099,
+      0px 10px 100px #ff0099,
+      0px -10px 100px #ff0099,
+      0px -10px 100px #ff0099;
+  }
+  to {
+      box-shadow:0px 0px rgba(200,0,0,0.0),
+  }
+}*/
+
+.container {
+  text-transform: uppercase;
+  position:relative;
+  z-index: 1;
+  width:100%;
+  display:block;
 }
 
 .output {
@@ -92,10 +124,10 @@ iframe {
     color: #eeeeee;
     font-size: 17px;
     font-family: 'Cuprum', Georgia, "Times New Roman", Times, Serif;
-    background: #2c0120f5; 
-    background: radial-gradient(circle,#080a17 0%, #2c0120 100%);
-    width: 100%; 
-    height: 51px; 
+    background: #2c0120f5;
+    background: radial-gradient(circle,#21041d 11%, #2c0120 100%);
+    width: 100%;
+    height: 51px;
     border-bottom: 1x solid #340a28;
     text-shadow: 0 1px 0 #340a28;
     }
@@ -521,10 +553,6 @@ a {
   color: #20b8ff;
 }
 
-.logo {
-  max-width: 90%;
-}
-
 .more-section {
   margin-bottom: 62px;
 }
@@ -686,7 +714,7 @@ a {
     max-width: 90%;
   }
   .logo {
-    max-width: 80%;
+    max-width: 90%;
   }
   .more-section {
     margin-bottom: 50px;
@@ -711,4 +739,5 @@ a {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
 }
