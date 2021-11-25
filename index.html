@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
   <!-- CSS -->
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/haxida.css" rel="stylesheet" type="text/css">
@@ -188,13 +188,7 @@
       <div class="container-fluid bg-color">
           <div class="container">
             <center>
-              <div class="nomics-ticker-widget-embedded nomics-ticker-widget-size-responsive nomics-ticker-widget-bg-light">
-                  <iframe frameborder="0" scrolling="no" height="270px" sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups" src="https://widget.nomics.com/assets/HAX/USD/" title="Haxida Price"></iframe>
-                  <div class="nomics-ticker-widget-footer" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
-                    <a href="https://nomics.com/assets/HAX-Haxida?quote=USD&amp;utm_source=nomics-widget&amp;utm_campaign=HAX-USD&amp;utm_medium=widget" target="_blank" rel="nofollow noopener" class="">Haxida Price</a> by <a href="https://nomics.com/?utm_source=nomics-widget&amp;utm_campaign=HAX-USD&amp;utm_medium=widget" target="_blank" rel="nofollow noopener">Nomics (A&nbsp;Crypto&nbsp;Market&nbsp;Cap&nbsp;Provider)</a>
-                  </div>
-              </div>
-              <script src="https://widget.nomics.com/embed.js"></script>
+              <div class="nomics-ticker-widget" data-name="Haxida" data-base="HAX" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
             </center>
           </div>
       </div>
@@ -284,11 +278,11 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/modernizr.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!--Web3-->
-  <script src="js/web3.min.js"></script>
+  <script src="js/web3.min.js" type="text/javascript"></script>
   <script>
   $(document).ready(function() {
    window.addEventListener('load', function() {
