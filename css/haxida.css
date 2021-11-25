@@ -499,15 +499,25 @@ a {
   margin-top: 40px;
 }
 
+.more-link-l {
+  float: left;
+  text-decoration: none;
+}
 .more-link {
   float: right;
   text-decoration: none;
 }
 
+.wallet-mr {
+  max-width: 40%;
+  margin-top: 1px;
+  margin-bottom: 31px;
+}
+
 .pancake {
   max-width: 40%;
   margin-top: 1px;
-  margin-bottom: 51px;
+  margin-bottom: 31px;
 }
 
 .bsc-logo {

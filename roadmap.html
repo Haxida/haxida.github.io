@@ -118,12 +118,33 @@
     </div>
   </section>
   </div>
+  <br>
   <div class="more-section">
     <div class="read-more w-container">
       <div class="more-row w-row">
         <div class="cs1 w-col w-col-6">
           <a class="more-link w-inline-block" href="https://pancakeswap.finance/swap?outputCurrency=0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b" rel="nofollow" title="Buy HAX on PancakeSwap"><img class="pancake" title="BUY HAXIDA TOKEN" src="images/cake-logo.png" width="196">
           </a>
+          </span><br>
+          &nbsp;&nbsp;&nbsp;<span class="more-link-l w-inline-block">
+          <button id="addNetwork" type="button" style="width: 170px" class="btn btn-outline-primary btn-rounded" data-toggle="tooltip" data-placement="bottom" title="Add BSC Network to MetaMask">
+             <img class="wallet-mr" style="width:20px" src="images/metamask.svg" alt="Metamask">
+           Add BSC Network
+          </button>
+          </span>
+          &nbsp;&nbsp;&nbsp;<span class="more-link-l w-inline-block">
+          <button id="connectToWallet" type="button" style="width: 110px" class="btn btn-outline-primary btn-rounded" data-toggle="tooltip" data-placement="bottom" title="Connect to your MetaMask wallet">
+             <img class="wallet-mr" style="width:20px" src="https://raw.githubusercontent.com/Haxida/Assets/main/logo-32.png"/>
+           Connect
+          </button>
+          </span>
+
+          &nbsp;&nbsp;&nbsp;<span class="more-link-l w-inline-block">
+          <button id="addHaxidaToWallet" type="button" style="width: 140px" class="btn btn-outline-primary btn-rounded" data-toggle="tooltip" data-placement="bottom" title="Add the HAX Token to your MetaMask wallet">
+            <img class="wallet-mr" style="width:20px" src="https://raw.githubusercontent.com/Haxida/Assets/main/logo-256.png"/>
+           Add to Wallet
+          </button>
+
         </div>
       </div>
     </div>
@@ -152,9 +173,145 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-  <script src="js/modernizr.js" type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--Web3-->
+  <script src="js/web3.min.js"></script>
+  <script>
+  $(document).ready(function() {
+   window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('loaded');
+
+    var addHaxidaToWallet = $("#addHaxidaToWallet");
+    addHaxidaToWallet.click(function() {
+       (async () => {
+          // window.ethereum
+          const tokenAddress = '0xbC718075f36A37459D855BDaAc5a3F057Eb2D98b';
+          const tokenSymbol = 'HAX';
+          const tokenDecimals = 8;
+          const tokenImage = 'https://raw.githubusercontent.com/Haxida/Assets/main/logo-256.png';
+
+         if (window.ethereum) {
+            try {
+               // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+               const wasAdded = await window.ethereum.request({
+                 method: 'wallet_watchAsset',
+                 params: {
+                   type: 'ERC20', // Initially only supports ERC20, but eventually more!
+                   options: {
+                     address: tokenAddress, // The address that the token is at.
+                     symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+                     decimals: tokenDecimals, // The number of decimals in the token
+                     image: tokenImage, // A string url of the token logo
+                   },
+                 },
+              });
+
+              if (wasAdded) {
+                 console.log('Thanks for your interest!');
+              } else {
+                 console.log('Your loss!');
+              }
+            } catch (error) {
+              console.log(error);
+            }
+          } else {
+            alert("Please install MetaMask");
+            return;
+          }
+        })() // <- call the function right after declaring it
+    });
+  });
+ });
+  </script>
+  <script>
+  $(document).ready(function() {
+   window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('loaded');
+
+    var connectToWallet = $("#connectToWallet");
+    connectToWallet.click(function() {
+       (async () => {
+            // Check if MetaMask is installed on user's browser
+            if (window.ethereum) {
+              // connect to metamask
+              //const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+              //const chainId = await window.ethereum.request({ method: 'eth_chainId'});
+              window.ethereum.request({ method: 'eth_requestAccounts' })
+                   .then((accounts) => console.log(accounts))
+                   .catch((error) => console.log(error));
+            } else {
+              // Show alert if Ethereum provider is not detected
+              alert("Please install Mask");
+              return;
+            }
+        })() // <- call the function right after declaring it
+    });
+  });
+ });
+  </script>
+  <script>
+  $(document).ready(function() {
+   window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('loaded');
+
+    let ethereum = window.ethereum;
+    var addNetwork = $("#addNetwork");
+    addNetwork.click(function() {
+      (async () => {
+          // Check if MetaMask is installed on user's browser
+          if (ethereum) {
+             var network = 0;
+             network = await ethereum.request({ method: 'eth_chainId'});
+             netID = network;
+
+             if (netID == 0x38) {
+                await alert("BSC Network has already been added to Metamask.");
+                return;
+             } else {
+               const params = [{
+                    "chainId": '0x38'
+               }]
+               try {
+                   await ethereum.request({ method: 'wallet_switchEthereumChain', params, })
+               } catch (error) {
+                   // something failed, e.g., user denied request
+                   //console.log(error);
+               }
+             }
+
+             const params = [{
+                 "chainId": '0x38',
+                 "chainName": 'Binance Smart Chain',
+                 "nativeCurrency": {
+                     "name": 'BNB',
+                     "symbol": 'BNB',
+                     "decimals": 18
+                 },
+                 "rpcUrls": [
+                     'https://bsc-dataseed.binance.org/'
+                 ],
+                 "blockExplorerUrls": [
+                     'https://bscscan.com/'
+                 ],
+             }]
+             try {
+                 await ethereum.request({ method: 'wallet_addEthereumChain', params, })
+             } catch (error) {
+                 // something failed, e.g., user denied request
+                 //console.log(error);
+             }
+          } else {
+            // Show alert if Ethereum provider is not detected
+            await alert("Please install MetaMask");
+            return;
+          }
+       })() // <- call the function right after declaring it
+    });
+  });
+ });
+  </script>
   <script> 
     function googleTranslateElementInit() { 
       new google.translate.TranslateElement({ 
