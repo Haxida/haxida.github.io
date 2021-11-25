@@ -505,6 +505,7 @@ a {
   margin-right: 1px;
 }
 .more-link {
+  float: right;
   text-decoration: none;
   margin-left: 1px;
   margin-right: 1px;
