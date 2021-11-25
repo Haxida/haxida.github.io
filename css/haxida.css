@@ -500,12 +500,14 @@ a {
 }
 
 .more-link-l {
-  float: left;
   text-decoration: none;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .more-link {
-  float: right;
   text-decoration: none;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .wallet-mr {
@@ -624,6 +626,9 @@ a {
     float: none;
   }
   .more-link {
+    float: none;
+  }
+  .more-link-l {
     float: none;
   }
   .bsc-logo {
